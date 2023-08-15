@@ -17,8 +17,7 @@ target_sources(pacman
 	PRIVATE
 		src/main.cpp
 		src/pacman/Config/config.cpp
-		src/pacman/Game/game.cpp
-		src/pacman/Game/game.cpp
+		src/Game.cpp
 		src/pacman/GameTile/Edible/Food/food.cpp
 		src/pacman/GameTile/Edible/Fruit/fruit.cpp
 		src/pacman/GameTile/Edible/PowerPellet/power_pellet.cpp

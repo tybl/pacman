@@ -1,4 +1,4 @@
-#include "pacman/Game/game.hpp"
+#include "Game.hpp"
 #include "pacman/MainMenu/main_menu.hpp"
 
 int main(int argc, char **argv) {

@@ -1,4 +1,4 @@
-#include "game.hpp"
+#include "Game.hpp"
 
 Game::Game() {
     initSounds();
@@ -7,6 +7,7 @@ Game::Game() {
     initMap();
     initWindow();
 }
+
 Game::~Game() {
     // Play "Thank you" sound, and wait for it to finish before proceeding.
     ty_sound->play();
@@ -137,13 +138,13 @@ void Game::initWindow() {
     PERFLOGGER_STOP_JOB("Game::initWindow");
 }
 
-vector<vector<char>> Game::readMap() {
+std::vector<std::vector<char>> Game::readMap() {
     PERFLOGGER_START_JOB("Game::readMap");
 
     std::ifstream file(Config::getInstance()->selected_map, std::ios::binary);
     std::string line= "";
     unsigned long int line_count = 0, line_length = 0;
-    vector<vector<char>> char_map = {};
+    std::vector<std::vector<char>> char_map = {};
 
     if (!file.is_open()) {
         std::cout << "ERROR: Cannot find map file" << std::endl;
@@ -153,7 +154,7 @@ vector<vector<char>> Game::readMap() {
     while (std::getline(file, line)) {
         if (line.size() > line_length) line_length = line.size();
 
-        vector<char> temp = {};
+        std::vector<char> temp = {};
         for (long unsigned int i = 0; i < line.size(); i++) {
             temp.push_back(line[i]);
         }
@@ -172,7 +173,7 @@ vector<vector<char>> Game::readMap() {
 void Game::initMap() {
     PERFLOGGER_START_JOB("Game::initMap");
 
-    vector<vector<char>> char_map = readMap();
+    std::vector<std::vector<char>> char_map = readMap();
     std::vector<Ghost*> ghosts[2];
     Pacman* pacmans[2];
 

@@ -1,18 +1,18 @@
 #pragma once
 
 #include "../PerfLogger/performance_logger.hpp"
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include <iostream>
+
+//#include <iostream>
 #include <string>
 #include <vector>
 
-using std::vector;
-using std::string;
 class GameTile;
-typedef vector<vector<vector<GameTile*>>> vec3pGT;
-typedef vector<vector<GameTile*>> vec2pGT;
-typedef vector<GameTile*> vec1pGT;
+typedef std::vector<std::vector<std::vector<GameTile*>>> vec3pGT;
+typedef std::vector<std::vector<GameTile*>> vec2pGT;
+typedef std::vector<GameTile*> vec1pGT;
 
 class Config {
 
@@ -29,7 +29,7 @@ public:
     // Window params.
     sf::Vector2i window_size = {0, 0};  // window size, in pixels
     const int window_framerate = 60;    // window framerate, in Hz.
-    const string window_title = "Pacman";
+    const std::string window_title = "Pacman";
 
     // Offset values used to center the map on the window.
     sf::Vector2f offset = {250.f, 75.f};
@@ -45,14 +45,14 @@ public:
 
     sf::Font *font;
 
-    std::map<const string, const string> maps = {
+    std::map<const std::string, const std::string> maps = {
         { "single-player", "res/maps/single-player.map" },
         { "dual-player", "res/maps/multi-player.map" },
     };
-    string selected_map = "";
+    std::string selected_map = "";
 
-    std::map<const string, sf::Sound*> sounds;
-    std::map<const string, sf::Texture *> textures;
+    std::map<const std::string, sf::Sound*> sounds;
+    std::map<const std::string, sf::Texture *> textures;
 
 private:
     static Config *instance;
@@ -65,10 +65,10 @@ private:
     void loadTextures();
     void loadFonts();
 
-    std::map<const string, sf::SoundBuffer*> buffers;
+    std::map<const std::string, sf::SoundBuffer*> buffers;
 
     // Resource file maps.
-    std::map<const string, const string> sound_files = {
+    std::map<const std::string, const std::string> sound_files = {
         { "background_music", "res/audio/background_music.wav" },
         { "food", "res/audio/food_chomp.wav" },
         { "fruit", "res/audio/fruit_chomp.wav" },
@@ -81,7 +81,7 @@ private:
         { "okey_dokey", "res/audio/okey_dokey.wav" },
     };
     const std::string font_file = "res/fonts/emulogic.ttf";
-    std::map<const string, const string> texture_files = {
+    std::map<const std::string, const std::string> texture_files = {
         { "empty", "res/sprites/empty.png" },
 
         // Regular walls, found inside the map

@@ -1,8 +1,11 @@
 #pragma once
 
-#include "../GameTile/__barrel__.hpp"
-#include "../Config/config.hpp"
-#include "../WindowTitle/window_title.hpp"
+#include "pacman/GameTile/game_tile.hpp"
+#include "pacman/GameTile/Wall/wall.hpp"
+#include "pacman/GameTile/Edible/__barrel__.hpp"
+#include "pacman/GameTile/Movable/__barrel__.hpp"
+
+#include "pacman/WindowTitle/window_title.hpp"
 
 class Game {
 
@@ -39,7 +42,7 @@ private:
 
     void initWindow(); // intialize the RenderWindow.
     void initMap();
-    vector<vector<char>> readMap();
+    std::vector<std::vector<char>> readMap();
     void initTitles();
     void initSounds();
 
