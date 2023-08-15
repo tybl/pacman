@@ -2,8 +2,17 @@
 
 #include "pacman/GameTile/game_tile.hpp"
 #include "pacman/GameTile/Wall/wall.hpp"
-#include "pacman/GameTile/Edible/__barrel__.hpp"
-#include "pacman/GameTile/Movable/__barrel__.hpp"
+#include "pacman/GameTile/Edible/edible.hpp"
+#include "pacman/GameTile/Edible/Food/food.hpp"
+#include "pacman/GameTile/Edible/Fruit/fruit.hpp"
+#include "pacman/GameTile/Edible/PowerPellet/power_pellet.hpp"
+#include "pacman/GameTile/Movable/movable.hpp"
+#include "pacman/GameTile/Movable/Pacman/pacman.hpp"
+#include "pacman/GameTile/Movable/Ghost/ghost.hpp"
+#include "pacman/GameTile/Movable/Ghost/Blinky/blinky.hpp"
+#include "pacman/GameTile/Movable/Ghost/Inky/inky.hpp"
+#include "Clyde.hpp"
+#include "pacman/GameTile/Movable/Ghost/Pinky/pinky.hpp"
 
 #include "pacman/WindowTitle/window_title.hpp"
 

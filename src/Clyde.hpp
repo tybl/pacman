@@ -1,7 +1,6 @@
-#ifndef CLYDE_HPP
-#define CLYDE_HPP
+#pragma once
 
-#include "../ghost.hpp"
+#include "pacman/GameTile/Movable/Ghost/ghost.hpp"
 
 class Clyde : public Ghost {
 
@@ -48,5 +47,3 @@ protected:
         return scatter_position;
     }
 };
-
-#endif //CLYDE_HPP

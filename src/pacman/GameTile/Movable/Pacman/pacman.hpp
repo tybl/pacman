@@ -2,7 +2,10 @@
 
 #include "../movable.hpp"
 #include "../../../Config/config.hpp"
-#include "../../Edible/__barrel__.hpp"
+#include "../../Edible/edible.hpp"
+#include "../../Edible/Food/food.hpp"
+#include "../../Edible/Fruit/fruit.hpp"
+#include "../../Edible/PowerPellet/power_pellet.hpp"
 #include "../Ghost/ghost.hpp"
 
 class Ghost;
