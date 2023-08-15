@@ -1,5 +1,4 @@
-#ifndef POWER_PELLET_HPP
-#define POWER_PELLET_HPP
+#pragma once
 
 #include <SFML/Graphics.hpp>
 
@@ -11,5 +10,3 @@ class PowerPellet : public Edible {
     PowerPellet(const sf::Vector2f &);
 
 }; //class PowerPellet
-
-#endif //POWER_PELLET_HPP

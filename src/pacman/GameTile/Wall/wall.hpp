@@ -1,5 +1,4 @@
-#ifndef WALL_HPP
-#define WALL_HPP
+#pragma once
 
 #include "../game_tile.hpp"
 
@@ -24,5 +23,3 @@ private:
     char type;
 
 }; //class Wall
-
-#endif //WALL_HPP

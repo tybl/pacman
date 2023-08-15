@@ -1,5 +1,4 @@
-#ifndef CONFIG_HPP
-#define CONFIG_HPP
+#pragma once
 
 #include "../PerfLogger/performance_logger.hpp"
 #include <SFML/Graphics.hpp>
@@ -195,5 +194,3 @@ private:
     };
 
 }; //Config
-
-#endif //CONFIG_HPP

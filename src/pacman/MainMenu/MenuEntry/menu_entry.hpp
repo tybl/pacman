@@ -1,5 +1,4 @@
-#ifndef MENU_ENTRY_HPP
-#define MENU_ENTRY_HPP
+#pragma once
 
 #include "../../Config/config.hpp"
 
@@ -25,5 +24,3 @@ private:
     bool is_active;     // The active status of the entry.
 
 }; //MenuEntry
-
-#endif //MENU_ENTRY_HPP

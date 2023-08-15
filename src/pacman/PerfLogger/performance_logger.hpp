@@ -1,5 +1,4 @@
-#ifndef PERFORMANCE_LOGGER_HPP
-#define PERFORMANCE_LOGGER_HPP
+#pragma once
 
 #include <map>
 #include <vector>
@@ -40,5 +39,3 @@ private:
     std::map<const std::string, std::vector<int64_t>> durations;
 
 }; //PerfLogger
-
-#endif //PERFORMANCE_LOGGER_HPP

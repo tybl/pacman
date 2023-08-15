@@ -1,5 +1,4 @@
-#ifndef RNG_HPP
-#define RNG_HPP
+#pragma once
 
 #include <random>
 
@@ -16,5 +15,3 @@ typedef struct RNG {
     std::uniform_int_distribution<std::mt19937::result_type> distribution;
 
 } RNG;
-
-#endif

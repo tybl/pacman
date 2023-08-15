@@ -1,5 +1,4 @@
-#ifndef PACMAN_HPP
-#define PACMAN_HPP
+#pragma once
 
 #include "../movable.hpp"
 #include "../../../Config/config.hpp"
@@ -93,5 +92,3 @@ private:
     int index;
 
 }; //Pacman
-
-#endif //PACMAN_HPP

@@ -1,5 +1,4 @@
-#ifndef GAME_TILE_HPP
-#define GAME_TILE_HPP
+#pragma once
 
 #include "../Config/config.hpp"
 
@@ -67,5 +66,3 @@ protected:
     void updateSprite();
 
 }; //class GameTile
-
-#endif //GAME_TILE_HPP

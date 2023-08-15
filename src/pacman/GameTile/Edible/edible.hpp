@@ -1,5 +1,4 @@
-#ifndef EDIBLE_HPP
-#define EDIBLE_HPP
+#pragma once
 
 #include "../game_tile.hpp"
 
@@ -35,5 +34,3 @@ protected:
     int score_modifier;
 
 };
-
-#endif //EDIBLE_HPP

@@ -1,5 +1,4 @@
-#ifndef MENU_ANIMATION_HPP
-#define MENU_ANIMATION_HPP
+#pragma once
 
 #include "../../Config/config.hpp"
 
@@ -31,5 +30,3 @@ private:
     const int animation_fps = 8;
 
 }; // MenuAnimation
-
-#endif //MENU_ANIMATION_HPP

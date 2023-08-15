@@ -1,5 +1,4 @@
-#ifndef GAME_HPP
-#define GAME_HPP
+#pragma once
 
 #include "../GameTile/__barrel__.hpp"
 #include "../Config/config.hpp"
@@ -16,9 +15,11 @@ public:
 private:
     // ---------------- MEMBERS ---------------- //
     sf::RenderWindow *window;
-    sf::Sound *ty_sound, *background_music;
+    sf::Sound *ty_sound;
+    sf::Sound *background_music;
     vec3pGT map;
-    WindowTitle *title, *game_over_title;
+    WindowTitle *title;
+    WindowTitle *game_over_title;
     bool game_over = false;
 
     // ---------------- METHODS ---------------- //
@@ -43,5 +44,3 @@ private:
     void initSounds();
 
 }; //class Game
-
-#endif //GAME_HPP

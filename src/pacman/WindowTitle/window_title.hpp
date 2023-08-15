@@ -1,5 +1,4 @@
-#ifndef WINDOW_TITLE_HPP
-#define WINDOW_TITLE_HPP
+#pragma once
 
 #include "../Config/config.hpp"
 
@@ -21,5 +20,3 @@ private:
     sf::Text text;      // the render-able object
 
 }; //WindowTitle
-
-#endif //WINDOW_TITLE_HPP
